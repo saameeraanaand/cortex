@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONE COMPILER</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="compiler.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="nav-left">
+    <img src="image.png" alt="logo" class="logo">
+    <span class="brand">ONE COMPILER</span>
+  </div>
+
+  <div class="nav-center">
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search">
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <button class="nav-btn">Learn</button>
+    <button class="nav-btn">More</button>
+    <button class="nav-btn">Help</button>
+
+    <a href="login.html" class="login-btn">
+      <i class="fa-solid fa-user"></i> Login
+    </a>
+
+    <i class="fa-solid fa-bars menu-icon"></i>
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1 class="hero-sub">Code Online With</h1>
+    <h1 class="hero-main">One Compiler</h1>
+    <p class="hero-text">
+      One Compiler helps over 12.8 million users worldwide write code online.
+    </p>
+
+    <input
+      type="text"
+      class="hero-search"
+      placeholder="Search by language / template / database"
+    >
+
+    <div class="category-bar">
+      <button>Popular</button>
+      <button>Web</button>
+      <button>Database</button>
+      <button>Programming</button>
+    </div>
+  </section>
+
+  <!-- LANGUAGE BOXES -->
+  <section class="languages">
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+      <h3>Java</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+      <h3>HTML</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="data:image/webp;base64,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" alt="C++">
+      <h3>C++</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+      <h3>Python</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="C">
+      <h3>C</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
+      <h3>PHP</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+      <h3>JavaScript</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919838.png" alt="Go">
+      <h3>Go</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919842.png" alt="Rust">
+      <h3>Rust</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Kotlin">
+      <h3>Kotlin</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="Lua">
+      <h3>Lua</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Ruby">
+      <h3>Ruby</h3>
+    </div>
+
+    <div class="language-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919846.png" alt="Swift">
+      <h3>Swift</h3>
+    </div>
+
+  </section>
+
+</main>
+<footer>
+  <div class="compaines">
+    <h2> APIs,Editor embedding & more </h2>
+    
+  </div>
+</footer>
+
+</body>
+</html>
