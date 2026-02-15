@@ -1,0 +1,179 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: #f7f8fc;
+  color: #333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  height: 64px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4a5cf5;
+}
+
+.nav-center .search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-btn {
+  background: #4a5cf5;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-sub {
+  color: gray;
+  font-size: 22px;
+}
+
+.hero-main {
+  color: #4a5cf5;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.hero-text {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.hero-search {
+  width: 80%;
+  max-width: 700px;
+  height: 46px;
+  padding: 0 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.hero-search:focus {
+  outline: none;
+  border-color: #4a5cf5;
+}
+
+/* ================= CATEGORY ================= */
+.category-bar {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.category-bar button {
+  background: #4a5cf5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ================= LANGUAGE CARDS ================= */
+.languages {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.language-card {
+  width: 160px;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-card img {
+  width: 64px;
+  margin-bottom: 10px;
+}
+
+.language-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .nav-center,
+  .nav-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

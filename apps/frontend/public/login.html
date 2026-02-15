@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Sign Up — One Compiler</title>
+  <style>
+    /* Basic reset + styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .login-container {
+      background: white;
+      padding: 24px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 360px;
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 10px 14px;
+      margin-top: 12px;
+      border: none;
+      border-radius: 4px;
+      background: #4a5cf5;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .login-container button:hover {
+      background: #3d4adb;
+    }
+    .alt-option {
+      text-align: center;
+      margin: 16px 0;
+      color: #666;
+      font-size: 14px;
+    }
+    .alt-option a {
+      color: #4a5cf5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login / Sign Up</h2>
+    <form action="#" method="post">
+      <input type="text" name="username" placeholder="Email or Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Continue</button>
+    </form>
+    <div class="alt-option">
+      <p>Or <a href="#">Continue with Google</a></p>
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
